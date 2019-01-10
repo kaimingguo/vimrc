@@ -213,7 +213,7 @@ References Link
 [hack-font]: https://sourcefoundry.org/hack/ "Hack"
 [nerd-fonts-hack]: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack/Regular/complete "Hack Regular Nerd Font Complete"
 [vim-leader]: http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader "Leader"
-[license]: https://gitlab.com/kaimingguo/vimrc/blob/master/LICENSE "license"
+[license]: https://github.com/kaimingguo/vimrc/blob/master/LICENSE "license"
 [vim-bootstrap]: https://vim-bootstrap.com "Vim Bootstrap"
 [amix-vimrc-gh]: https://github.com/amix/vimrc "vimrc"
 [mutewinter-dot_vim-gh]: https://github.com/mutewinter/dot_vim "dot_vim"
