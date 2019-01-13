@@ -146,47 +146,44 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 
 ## Plugin List
 
-| Plugin                                          | Description                                                                        | Category     |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------- | ------------ |
-| [Join][join-gh]                                 | better (hopefully) :Join command in vim                                            | Commands     |
-| [YCM-Generator][ycm-generator-gh]               | Generates config files for [YouCompleteMe][youcompleteme-gh]                       | Commands     |
-| [YouCompleteMe][youcompleteme-gh]               | A code-completion engine for Vim                                                   | Completion   |
-| [ale][ale-gh]                                   | Asynchronous linting/fixing for Vim and Language Server Protocol (LSP) integration | Integrations |
-| [auto-pairs][auto-pairs-gh]                     | Vim plugin, insert or delete brackets, parens, quotes in pair                      | Other        |
-| [c.vim][c-vim-gh]                               | C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc       | Language     |
-| [clang_complete][clang-complete-gh]             | Vim plugin that use clang for completing C/C++ code                                | Integrations |
-| [ctags.vim][ctags-vim-gh]                       | Display function name in the title bar                                             | Interface    |
-| [ctrlp.vim][ctrlp-vim-gh]                       | Fuzzy file, buffer, mru, tag, etc finder                                           | Interface    |
-| [editorconfig.vim][editorconfig-vim-gh]         | [EditorConfig][editorconfig] plugin for Vim                                        | Other        |
-| [fzf.vim][fzf-vim-gh]                           | fzf ❤️ vim                                                                         | Interface    |
-| [incsearch.vim][incsearch-vim-gh]               | 🔦 Improved incremental searching for Vim                                          | Commands     |
-| [jedi-vim][jedi-vim-gh]                         | Using the jedi autocompletion library for VIM                                      | Code display |
-| [lightline.vim][lightline-vim-gh]               | A light and configurable statusline/tabline plugin for Vim                         | Interface    |
-| [nerdtree][nerdtree-gh]                         | A tree explorer plugin for vim                                                     | Commands     |
-| [nord-vim][nord-vim-gh]                         | An arctic, north-bluish clean and elegant Vim theme                                | Code display |
-| [requirements.txt.vim][requirements-txt-vim-gh] | the Requirements File Format syntax support for Vim                                | Code display |
-| [tagbar][tagbar-gh]                             | Vim plugin that displays tags in a window, ordered by scope                        | Interface    |
-| [undotree][undotree-gh]                         | The ultimate undo history visualizer for VIM                                       | Interface    |
-| [abolish.vim][vim-abolish-gh]                   | easily search for, substitute, and abbreviate multiple variants of a word          | Commands     |
-| [vim-codefmt][vim-codefmt-gh]                   | codefmt is a utility for syntax-aware code formatting                              | Commands     |
-| [commentary.vim][vim-commentary-gh]             | comment stuff out                                                                  | Interface    |
-| [EasyMotion][vim-easymotion-gh]                 | Vim motions on speed!                                                              | Commands     |
-| [fugitive.vim][vim-fugitive-gh]                 | A Git wrapper so awesome, it should be illegal                                     | Integrations |
-| [vim-go][vim-go-gh]                             | Go development plugin for Vim                                                      | Language     |
-| [vim-grepper][vim-grepper-gh]                   | 👾 Helps you win at grep                                                           | Integrations |
-| [vim-gutentags][vim-gutentags-gh]               | A Vim plugin that manages your tag files                                           | Other        |
-| [Indent Guides][vim-indent-guides-gh]           | A Vim plugin for visually displaying indent levels in code                         | Code display |
-| [vim-javascript][vim-javascript-gh]             | Vastly improved Javascript indentation and syntax support in Vim                   | Language     |
-| [vim-markdown][vim-markdown-gh]                 | Markdown Vim Mode                                                                  | Language     |
-| [vim-misc][vim-misc-gh]                         | Miscellaneous auto-load Vim scripts                                                | Other        |
-| [numbertoggle][vim-numbertoggle-gh]             | Toggles between hybrid and absolute line numbers automatically                     | Interface    |
-| [vim-polyglot][vim-polyglot-gh]                 | A solid language pack for Vim                                                      | Language     |
-| [vim-session][vim-session-gh]                   | Extended session management for Vim (:mksession on steroids)                       | Commands     |
-| [vim-side-search][vim-side-search-gh]           | Search context in Vim in a sidebar using `ag` output                               | Commands     |
-| [vim-signify][vim-signify-gh]                   | ➕ Show a diff using Vim its sign ccolumn                                          | Integrations |
-| [surround.vim][vim-surround-gh]                 | quoting/parenthesizing made simple                                                 | Code display |
-| [vimproc.vim][vimproc-vim-gh]                   | Interactive command execution in Vim                                               | Commands     |
-| [vimshell.vim][vimshell-vim-gh]                 | 🐚 Powerful shell implemented by vim                                               | Commands     |
+| Plugin                                          | Description                                                                  | Category     |
+| ----------------------------------------------- | ---------------------------------------------------------------------------- | ------------ |
+| [Join][join-gh]                                 | better (hopefully) :Join command in vim                                      | Commands     |
+| [auto-pairs][auto-pairs-gh]                     | Vim plugin, insert or delete brackets, parens, quotes in pair                | Other        |
+| [c.vim][c-vim-gh]                               | C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc | Language     |
+| [ctags.vim][ctags-vim-gh]                       | Display function name in the title bar                                       | Interface    |
+| [ctrlp.vim][ctrlp-vim-gh]                       | Fuzzy file, buffer, mru, tag, etc finder                                     | Interface    |
+| [editorconfig.vim][editorconfig-vim-gh]         | [EditorConfig][editorconfig] plugin for Vim                                  | Other        |
+| [fzf.vim][fzf-vim-gh]                           | fzf ❤️ vim                                                                   | Interface    |
+| [incsearch.vim][incsearch-vim-gh]               | 🔦 Improved incremental searching for Vim                                    | Commands     |
+| [jedi-vim][jedi-vim-gh]                         | Using the jedi autocompletion library for VIM                                | Code display |
+| [nerdtree][nerdtree-gh]                         | A tree explorer plugin for vim                                               | Commands     |
+| [nord-vim][nord-vim-gh]                         | An arctic, north-bluish clean and elegant Vim theme                          | Code display |
+| [requirements.txt.vim][requirements-txt-vim-gh] | the Requirements File Format syntax support for Vim                          | Code display |
+| [syntastic][vim-syntastic-gh]                   | Syntax checking hacks for vim                                                | Language     |
+| [tagbar][tagbar-gh]                             | Vim plugin that displays tags in a window, ordered by scope                  | Interface    |
+| [undotree][undotree-gh]                         | The ultimate undo history visualizer for VIM                                 | Interface    |
+| [abolish.vim][vim-abolish-gh]                   | easily search for, substitute, and abbreviate multiple variants of a word    | Commands     |
+| [vim-airline][vim-airline-gh]                   | Lean & mean status/tabline for vim that's light as air                       | Interface    |
+| [vim-codefmt][vim-codefmt-gh]                   | codefmt is a utility for syntax-aware code formatting                        | Commands     |
+| [commentary.vim][vim-commentary-gh]             | comment stuff out                                                            | Interface    |
+| [EasyMotion][vim-easymotion-gh]                 | Vim motions on speed!                                                        | Commands     |
+| [fugitive.vim][vim-fugitive-gh]                 | A Git wrapper so awesome, it should be illegal                               | Integrations |
+| [vim-go][vim-go-gh]                             | Go development plugin for Vim                                                | Language     |
+| [vim-grepper][vim-grepper-gh]                   | 👾 Helps you win at grep                                                     | Integrations |
+| [vim-gutentags][vim-gutentags-gh]               | A Vim plugin that manages your tag files                                     | Other        |
+| [Indent Guides][vim-indent-guides-gh]           | A Vim plugin for visually displaying indent levels in code                   | Code display |
+| [vim-javascript][vim-javascript-gh]             | Vastly improved Javascript indentation and syntax support in Vim             | Language     |
+| [vim-markdown][vim-markdown-gh]                 | Markdown Vim Mode                                                            | Language     |
+| [vim-misc][vim-misc-gh]                         | Miscellaneous auto-load Vim scripts                                          | Other        |
+| [numbertoggle][vim-numbertoggle-gh]             | Toggles between hybrid and absolute line numbers automatically               | Interface    |
+| [vim-polyglot][vim-polyglot-gh]                 | A solid language pack for Vim                                                | Language     |
+| [vim-session][vim-session-gh]                   | Extended session management for Vim (:mksession on steroids)                 | Commands     |
+| [vim-side-search][vim-side-search-gh]           | Search context in Vim in a sidebar using `ag` output                         | Commands     |
+| [vim-signify][vim-signify-gh]                   | ➕ Show a diff using Vim its sign ccolumn                                    | Integrations |
+| [surround.vim][vim-surround-gh]                 | quoting/parenthesizing made simple                                           | Code display |
+| [vimproc.vim][vimproc-vim-gh]                   | Interactive command execution in Vim                                         | Commands     |
+| [vimshell.vim][vimshell-vim-gh]                 | 🐚 Powerful shell implemented by vim                                         | Commands     |
 
 ## See Also
 
@@ -223,19 +220,14 @@ Plugins Link
 -->
 
 [join-gh]: https://github.com/sk1418/join "Join"
-[ycm-generator-gh]: https://github.com/rdnetto/ycm-generator "YCM-Generator"
-[youcompleteme-gh]: https://github.com/valloric/youcompleteme "YouCompleteMe"
-[ale-gh]: https://github.com/w0rp/ale "ale"
 [auto-pairs-gh]: https://github.com/jiangmiao/auto-pairs "auto-pairs"
 [c-vim-gh]: https://github.com/vim-scripts/c.vim "c.vim"
-[clang-complete-gh]: https://github.com/Rip-Rip/clang_complete "clang_complete"
 [ctags-vim-gh]: https://github.com/vim-scripts/ctags.vim "ctags.vim"
 [ctrlp-vim-gh]: https://github.com/ctrlpvim/ctrlp.vim "ctrlp.vim"
 [editorconfig-vim-gh]: https://github.com/editorconfig/editorconfig-vim "editorconfig.vim"
 [fzf-vim-gh]: https://github.com/junegunn/fzf.vim "fzf.vim"
 [incsearch-vim-gh]: https://github.com/haya14busa/incsearch.vim "incsearch.vim"
 [jedi-vim-gh]: https://github.com/davidhalter/jedi-vim "jedi-vim"
-[lightline-vim-gh]: https://github.com/itchyny/lightline.vim "lightline.vim"
 [nerdtree-gh]: https://github.com/scrooloose/nerdtree "nerdtree"
 [nord-vim-gh]: https://github.com/arcticicestudio/nord-vim "nord-vim"
 [requirements-txt-vim-gh]: https://github.com/raimon49/requirements.txt.vim "requirements.txt.vim"
@@ -261,3 +253,5 @@ Plugins Link
 [vim-surround-gh]: https://github.com/tpope/vim-surround "surround.vim"
 [vimproc-vim-gh]: https://github.com/shougo/vimproc.vim "vimproc.vim"
 [vimshell-vim-gh]: https://github.com/shougo/vimshell.vim "vimshell.vim"
+[vim-syntastic-gh]: https://github.com/vim-syntastic/syntastic "syntastic"
+[vim-airline-gh]: https://github.com/vim-airline/vim-airline "vim-airline"
