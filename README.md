@@ -9,12 +9,10 @@ VimL: Opinionated Vim configuration
 This is a distribution of vim plugins and resources for Vim.
 
 - [fugitive.vim][vim-fugitive-gh] requires [Git][git] to be installed
-- [ale][ale-gh] uses various lending and style checking tools that are separately installed
 - [fzf.vim][fzf-vim-gh] requires [The Silver Searcher][the-silver-searcher] to be installed
 - [ctags.vim][ctags-vim-gh] requires [Universal Ctags][universal-ctags] to be installed
 - [jedi-vim][jedi-vim-gh] requires [jedi][jedi] to be installed
 - [editorconfig.vim][editorconfig-vim-gh] requires [EditorConfig][editorconfig] to be installed
-- [YouCompleteMe][youcompleteme-gh] requires C/C++ build tools (e.g., `CMake`)
 
 ### Plugins
 
@@ -130,9 +128,9 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | [incsearch.vim][incsearch-vim-gh]     | /                |        | Go to forward search                                       |
 | [incsearch.vim][incsearch-vim-gh]     | ?                |        | Go to backward search                                      |
 | [incsearch.vim][incsearch-vim-gh]     | g /              |        | Stay incsearch                                             |
-| [nerdtree][nerdtree-gh]               | <F2>             | Normal | Toggle nerd tree explorer                                  |
-| [tagbar][tagbar-gh]                   | <F3>             | Normal | Toggle tag explorer                                        |
-| [undotree][undotree-gh]               | <F4>             | Normal | Toggle undo tree explorer                                  |
+| [nerdtree][nerdtree-gh]               | \<F2\>           | Normal | Toggle nerd tree explorer                                  |
+| [tagbar][tagbar-gh]                   | \<F3\>           | Normal | Toggle tag explorer                                        |
+| [undotree][undotree-gh]               | \<F4\>           | Normal | Toggle undo tree explorer                                  |
 | [vim-easymotion][vim-easymotion-gh]   | \<space\>        | Normal | Start easy motion, input `<space>{char}{label}` jump to it |
 | [vim-easymotion][vim-easymotion-gh]   | \<leader\> j     | Normal | Line motions with line below the cursor                    |
 | [vim-easymotion][vim-easymotion-gh]   | \<leader\> k     | Normal | Line motions with above the cursor                         |
