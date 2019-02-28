@@ -14,6 +14,7 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeHighlightCursorline = 0
 let g:NERDTreeWinSize = 35
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 let g:NERDTreeIgnore = [
   \ '\.rbc$',
