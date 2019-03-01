@@ -173,6 +173,9 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | [fugitive.vim][vim-fugitive-gh]       | \<leader\> g s   | Normal | `git status`                                               |
 | [fugitive.vim][vim-fugitive-gh]       | \<leader\> g d   | Normal | `git diff`                                                 |
 | [fugitive.vim][vim-fugitive-gh]       | \<leader\> g r   | Normal | `git remove`                                               |
+| [UltiSnips][ultisnips-gh]             | \<tab\>          |        | Next snippet                                               |
+| [UltiSnips][ultisnips-gh]             | Shift-\<tab\>    |        | Previous snippet                                           |
+| [UltiSnips][ultisnips-gh]             | Ctrl-c           |        | Snippet expand trigger                                     |
 
 ## Plugin List
 
