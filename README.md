@@ -13,11 +13,43 @@ This is a distribution of vim plugins and resources for Vim.
 - [ctags.vim][ctags-vim-gh] requires [Universal Ctags][universal-ctags] to be installed
 - [jedi-vim][jedi-vim-gh] requires [jedi][jedi] to be installed
 - [editorconfig.vim][editorconfig-vim-gh] requires [EditorConfig][editorconfig] to be installed
+- [vim-go][vim-go-gh] requires `golang` to be installed
+- [youcompleteme][youcompleteme-gh] make sure you have Vim 7.4+ with Python 2 or Python 3 support. requires `CMake` and `LLVM` to build this.
 
 ### Plugins
 
 I manage plugins with [vim-plug][vim-plug], which is pretty easy to install.
 All plugins settings are defined in the `plug_plugins` folder.
+
+#### vim-codefmt
+
+Use `google-java-executable` to format `java` filetype, add this to `config/_local.vim`:
+
+```
+try
+  Glaive codefmt plugin[mappings]
+  Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
+catch
+endtry
+```
+
+##### Autoformatting
+
+Want to just sit back and let autoformat happen automatically? Add this to `config/_local.vim`:
+
+```
+if has('autocmd')
+  augroup autoformat_settings
+    autocmd!
+
+    autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
+    autocmd FileType javascript AutoFormatBuffer prettier
+    autocmd FileType go AutoFormatBuffer gofmt
+    autocmd FileType java AutoFormatBuffer google-java-format
+    autocmd FileType python AutoFormatBuffer yapf
+  augroup END
+endif
+```
 
 #### Custom Plugins
 
@@ -147,6 +179,8 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | Plugin                                          | Description                                                                  | Category     |
 | ----------------------------------------------- | ---------------------------------------------------------------------------- | ------------ |
 | [Join][join-gh]                                 | better (hopefully) :Join command in vim                                      | Commands     |
+| [YCM-Generator][ycm-generator-gh]               | Generates config files for [YouCompleteMe][youcompleteme-gh]                 | Commands     |
+| [YouCompleteMe][youcompleteme-gh]               | A code-completion engine for Vim                                             | Completion   |
 | [auto-pairs][auto-pairs-gh]                     | Vim plugin, insert or delete brackets, parens, quotes in pair                | Other        |
 | [c.vim][c-vim-gh]                               | C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc | Language     |
 | [ctags.vim][ctags-vim-gh]                       | Display function name in the title bar                                       | Interface    |
@@ -160,6 +194,7 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | [requirements.txt.vim][requirements-txt-vim-gh] | the Requirements File Format syntax support for Vim                          | Code display |
 | [syntastic][vim-syntastic-gh]                   | Syntax checking hacks for vim                                                | Language     |
 | [tagbar][tagbar-gh]                             | Vim plugin that displays tags in a window, ordered by scope                  | Interface    |
+| [UltiSnips][ultisnips-gh]                       | The ultimate snippet solution for Vim                                        | Completion   |
 | [undotree][undotree-gh]                         | The ultimate undo history visualizer for VIM                                 | Interface    |
 | [abolish.vim][vim-abolish-gh]                   | easily search for, substitute, and abbreviate multiple variants of a word    | Commands     |
 | [vim-airline][vim-airline-gh]                   | Lean & mean status/tabline for vim that's light as air                       | Interface    |
@@ -253,3 +288,6 @@ Plugins Link
 [vimshell-vim-gh]: https://github.com/shougo/vimshell.vim "vimshell.vim"
 [vim-syntastic-gh]: https://github.com/vim-syntastic/syntastic "syntastic"
 [vim-airline-gh]: https://github.com/vim-airline/vim-airline "vim-airline"
+[youcompleteme-gh]: https://github.com/Valloric/YouCompleteMe "YouCompleteMe"
+[ycm-generator-gh]: https://github.com/rdnetto/YCM-Generator "YCM-Generator"
+[ultisnips-gh]: https://github.com/SirVer/ultisnips "ultisnips"

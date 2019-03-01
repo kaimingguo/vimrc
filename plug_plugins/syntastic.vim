@@ -8,6 +8,7 @@ if exists('g:plug_installing_plugins')
   finish
 endif
 
+
 let g:syntastic_enable_signs = 1
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_always_populate_loc_list = 1
@@ -26,6 +27,5 @@ endif
 
 highlight link SyntasticError SpellBad
 highlight link SyntasticWarning SpellCap
-
 highlight SyntasticErrorSign ctermfg=1 guifg=#BF616A
 highlight SyntasticWarningSign ctermfg=3 guifg=#EBCB8B
