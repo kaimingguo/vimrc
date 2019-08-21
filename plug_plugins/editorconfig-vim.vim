@@ -8,6 +8,5 @@ if exists('g:plug_installing_plugins')
   finish
 endif
 
-let g:EditorConfig_core_mode = "external_command"
 let g:EditorConfig_preserve_formatoptions = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
