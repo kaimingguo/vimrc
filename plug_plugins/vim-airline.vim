@@ -8,7 +8,7 @@ if exists('g:plug_installing_plugins')
   finish
 endif
 
-let g:airline_theme = 'nord'
+let g:airline_theme = 'papercolor'
 let g:airline_skip_empty_sections = 1
 
 let g:airline#extensions#virtualenv#enabled = 1

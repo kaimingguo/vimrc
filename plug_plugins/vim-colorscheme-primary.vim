@@ -4,11 +4,20 @@
 
 
 if exists('g:plug_installing_plugins')
-  Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.9.0' }
+  Plug 'google/vim-colorscheme-primary'
   finish
 endif
 
+set t_Co=256
+if has('mac')
+  if system('defaults read -g AppleInterfaceStyle') =~ '^Dark'
+    set background=dark
+  else
+    set background=light
+  endif
+endif
+
 try
-  colorscheme nord
+  colorscheme primary
 catch
 endtry
