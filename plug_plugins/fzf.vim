@@ -73,7 +73,7 @@ function! s:FzfFilesWithDevIcons() abort
 
   function! s:OpenFile(item)
     let l:parts = split(a:item, ' ')
-    let l:file_path = get(l:parts, 1, '')
+    let l:file_path = get(l:parts, 0, '')
     execute 'silent e' l:file_path
   endfunction
 
