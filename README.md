@@ -51,6 +51,26 @@ if has('autocmd')
 endif
 ```
 
+#### vimwiki
+
+Use `markdown`:
+
+```
+let g:vimwiki_list = [{
+  \ 'path_html': '$HOME/Documents/wiki_html',
+  \ 'path': '$HOME/Documents/wiki/',
+  \ 'template_path': '$HOME/Documents/wiki/template/',
+  \ 'syntax': 'markdown',
+  \ 'ext': '.md',
+  \ 'custom_wiki2html': g:vimdir . '/scripts/wiki2html.sh'
+  \ }]
+
+augroup vimwiki_settings
+  au BufRead,BufNewFile *.md set filetype=vimwiki
+augroup END
+```
+
+
 #### Custom Plugins
 
 Create a new `.vim` file with the same name as the plugin you'd like to install
@@ -176,6 +196,17 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | [UltiSnips][ultisnips-gh]             | \<tab\>          |        | Next snippet                                               |
 | [UltiSnips][ultisnips-gh]             | Shift-\<tab\>    |        | Previous snippet                                           |
 | [UltiSnips][ultisnips-gh]             | Ctrl-c           |        | Snippet expand trigger                                     |
+| [vimwiki][vimwiki-gh]                 | \<leader\> w w   | Normal | Open default wiki index file                               |
+| [vimwiki][vimwiki-gh]                 | \<leader\> w t   | Normal | Open default wiki index file in a new tab                  |
+| [vimwiki][vimwiki-gh]                 | \<leader\> w s   | Normal | Select and open wiki index file                            |
+| [vimwiki][vimwiki-gh]                 | \<leader\> w d   | Normal | Delete wiki file you are in                                |
+| [vimwiki][vimwiki-gh]                 | \<leader\> w r   | Normal | Rename wiki file you are in                                |
+| [vimwiki][vimwiki-gh]                 | \<enter\>        | Normal | Follow/Create wiki link                                    |
+| [vimwiki][vimwiki-gh](only vimwiki)   | Shift-\<enter\>  | Normal | Split and follow/create wiki link                          |
+| [vimwiki][vimwiki-gh](only vimwiki)   | Ctrl-\<enter\>   | Normal | Vertical split and follow/create wiki link                 |
+| [vimwiki][vimwiki-gh](only vimwiki)   | \<backspace\>    | Normal | Go back to parent(previous) wiki link                      |
+| [vimwiki][vimwiki-gh](only vimwiki)   | \<tab\>          | Normal | Find next wiki link                                        |
+| [vimwiki][vimwiki-gh](only vimwiki)   | Shift-\<tab\>    | Normal | Find previous wiki link                                    |
 
 ## Plugin List
 
@@ -220,6 +251,7 @@ The [leader][vim-leader] key use `,`, so when ever you see `<leader>` it meas
 | [surround.vim][vim-surround-gh]                 | quoting/parenthesizing made simple                                           | Code display |
 | [vimproc.vim][vimproc-vim-gh]                   | Interactive command execution in Vim                                         | Commands     |
 | [vimshell.vim][vimshell-vim-gh]                 | 🐚 Powerful shell implemented by vim                                         | Commands     |
+| [vimwiki][vimwiki-gh]                           | Personal Wiki for Vim                                                        | Integrations |
 
 ## See Also
 
@@ -294,3 +326,4 @@ Plugins Link
 [youcompleteme-gh]: https://github.com/Valloric/YouCompleteMe "YouCompleteMe"
 [ycm-generator-gh]: https://github.com/rdnetto/YCM-Generator "YCM-Generator"
 [ultisnips-gh]: https://github.com/SirVer/ultisnips "ultisnips"
+[vimwiki-gh]: https://github.com/vimwiki/vimwiki "vimwiki"
