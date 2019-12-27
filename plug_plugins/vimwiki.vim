@@ -14,6 +14,8 @@ if has('autocmd')
   augroup END
 endif
 
+let g:vimwiki_global_ext = 0
+
 let g:vimwiki_default = {}
 let g:vimwiki_default.path = '$HOME/Documents/wiki'
 let g:vimwiki_default.path_html = '$HOME/Documents/wiki_html'
