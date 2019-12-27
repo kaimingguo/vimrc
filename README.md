@@ -10,12 +10,27 @@ The distribution is designed to work with Vim >= 8.1 (neovim >= 0.3.8).
 
 This also requires `curl`, [git](https://git-scm.com), `ruby` support.
 
-### Plugins
+## Configuration
+
+You can overwrite default configuration and key bindings by using one of
+following files in `core` folder:
+
+- **generate.vim** Regular configuration
+- **mapping.vim** Mappings key configuration
+
+## Fonts
+
+Use the [IBM Plex](https://github.com/IBM/plex) typeface.
+
+[IBM Plex Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/IBMPlexMono/Mono/complete)
+in GUI (like MacVim) font, it using in vim-devicons.
+
+## Plugins Requirements
 
 I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug), which is pretty easy to install.
 All plugins settings are defined in the `plug_plugins` folder.
 
-#### Custom Plugins
+## Custom Plugins
 
 Create a new `.vim` file with the same name as the plugin you'd like to install
 in `plug_plugins/custom`. Then add the installation block. Follow:
@@ -38,21 +53,6 @@ endif
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 let g:WebDevIconsNerdTreeGitPlugForceVAlign = ''
 ```
-
-### Fonts
-
-Use the [IBM Plex](https://github.com/IBM/plex) typeface.
-
-[IBM Plex Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/IBMPlexMono/Mono/complete)
-in GUI (like MacVim) font, it using in vim-devicons.
-
-## Configuration
-
-You can overwrite default configuration and key bindings by using one of
-following files in `core` folder:
-
-- **generate.vim** Regular configuration
-- **mapping.vim** Mappings key configuration
 
 ## Mappings
 
@@ -103,7 +103,38 @@ so when ever you see `<leader>` it meas `,` key.
 
 ### Plugins Mappings
 
+#### Vimwiki
+
+Normal mode:
+
+- `<leader>ww`: Open default wiki index page.
+- `<leader>wt`: Open default wiki index page in a new tab.
+- `<leader>wd`: Delete current wiki page.
+- `<leader>wr`: Rename current wiki page.
+- `<enter>`: In vimwiki file, follow/create wiki link.
+- `<backspace>`: In vimwiki file, go back to parent (previous) wiki link.
+- `<tab>`: In vimwiki file, find next wiki link.
+
+For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/vimwiki/vimwiki#key-bindings)
+
+## Commands
+
+### Plugins Commands
+
+#### Vimwiki
+
+- `:Vimwiki2HTML`: Convert current wiki link to HTML.
+- `:VimwikiAll2HTML`: Convert all wiki links to HTML.
+
 ## Plugin List
+
+<!-- prettier-ignore-start -->
+<!-- PLUGIN_LIST_BEGIN -->
+| Plugin | Description |
+| ------ | ----------- |
+| [vimwiki](https://github.com/vimwiki/vimwiki) | Personal Wiki for Vim |
+<!-- PLUGIN_LIST_END -->
+<!-- prettier-ignore-end -->
 
 ## See Also
 
