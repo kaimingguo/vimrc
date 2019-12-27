@@ -132,6 +132,8 @@ For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/v
 <!-- PLUGIN_LIST_BEGIN -->
 | Plugin | Description |
 | ------ | ----------- |
+| [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
+| [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |
 | [vimwiki](https://github.com/vimwiki/vimwiki) [:gear:](./plug_plugins/vimwiki.vim) | Personal Wiki for Vim |
 <!-- PLUGIN_LIST_END -->
