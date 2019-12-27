@@ -15,6 +15,9 @@ This also requires `curl`, [git](https://git-scm.com), `ruby` support.
 I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug), which is pretty easy to install.
 All plugins settings are defined in the `plug_plugins` folder.
 
+- [Fugitive](https://github.com/tpope/vim-fugitive) Requires Git to be installed.
+- [vimwiki](https://github.com/vimwiki/vimwiki) Convert vimwiki to html requires `pandoc` to be installed.
+
 ## Configuration
 
 You can overwrite default configuration and key bindings by using one of
@@ -126,6 +129,14 @@ For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/v
 - `:Vimwiki2HTML`: Convert current wiki link to HTML.
 - `:VimwikiAll2HTML`: Convert all wiki links to HTML.
 
+#### Fugitive
+
+- `:Git`: Bring up a summary window vaguely akin to git-status.
+- `:Gwrite`: Write to the current file's path and stage the results.
+- `:Gdiffsplit!`: Diff against any and all direct ancestors, retaining focus on the current window.
+
+For more information, see `:help fugitive`.
+
 ## Plugin List
 
 <!-- prettier-ignore-start -->
@@ -134,7 +145,9 @@ For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/v
 | ------ | ----------- |
 | [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
 | [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
+| [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |
+| [vim-signify](https://github.com/mhinz/vim-signify) [:gear:](./plug_plugins/vim-signify.vim) | :heavy_plus_sign: Show a diff using Vim its sign column. |
 | [vimwiki](https://github.com/vimwiki/vimwiki) [:gear:](./plug_plugins/vimwiki.vim) | Personal Wiki for Vim |
 <!-- PLUGIN_LIST_END -->
 <!-- prettier-ignore-end -->
