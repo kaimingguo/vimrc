@@ -10,6 +10,11 @@ The distribution is designed to work with Vim >= 8.1 (neovim >= 0.3.8).
 
 This also requires `curl`, [git](https://git-scm.com), `ruby` support.
 
+## Plugins Requirements
+
+I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug), which is pretty easy to install.
+All plugins settings are defined in the `plug_plugins` folder.
+
 ## Configuration
 
 You can overwrite default configuration and key bindings by using one of
@@ -24,11 +29,6 @@ Use the [IBM Plex](https://github.com/IBM/plex) typeface.
 
 [IBM Plex Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/IBMPlexMono/Mono/complete)
 in GUI (like MacVim) font, it using in vim-devicons.
-
-## Plugins Requirements
-
-I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug), which is pretty easy to install.
-All plugins settings are defined in the `plug_plugins` folder.
 
 ## Custom Plugins
 
@@ -132,7 +132,8 @@ For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/v
 <!-- PLUGIN_LIST_BEGIN -->
 | Plugin | Description |
 | ------ | ----------- |
-| [vimwiki](https://github.com/vimwiki/vimwiki) | Personal Wiki for Vim |
+| [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |
+| [vimwiki](https://github.com/vimwiki/vimwiki) [:gear:](./plug_plugins/vimwiki.vim) | Personal Wiki for Vim |
 <!-- PLUGIN_LIST_END -->
 <!-- prettier-ignore-end -->
 
