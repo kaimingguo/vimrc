@@ -131,6 +131,10 @@ Normal:
 
 - `<esc><esc>`: Disable highlight search word.
 
+### NerdTree
+
+- `<leader>nn`: Toggle NERDTree split window.
+
 ## Commands
 
 ### Plugins Commands
@@ -148,6 +152,13 @@ Normal:
 
 For more information, see `:help fugitive`.
 
+#### NerdTree (NerdTree-Tabs)
+
+- `:NerdTreeTabsOpen`: Switches NERDTree on for all tabs.
+- `:NerdTreeTabsClose`: Switches NERDTree off for all tabs.
+
+For more information, see [nerdtree-tabs-key-mappings](https://github.com/jistr/vim-nerdtree-tabs#commands-and-mappings).
+
 ## Plugin List
 
 <!-- prettier-ignore-start -->
@@ -157,7 +168,10 @@ For more information, see `:help fugitive`.
 | [incsearch.vim](https://github.com/haya14busa/incsearch.vim) [:gear:](./plug_plugins/incsearch.vim) | 🔦 Improved incremental searching for Vim |
 | [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
 | [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
+| [nerdtree](https://github.com/vim-nerdtree/nerdtree) [:gear:](./plug_plugins/nerdtree.vim) | A tree explorer plugin for vim. |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
+| [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) [:gear:](./plug_plugins/vim-nerdtree-syntax-highlight.vim) | Extra syntax and highlight for nerdtree files |
+| [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) [:gear:](./plug_plugins/vim-nerdtree-tabs.vim) | NERDTree and tabs together in Vim, painlessly |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |
 | [vim-signify](https://github.com/mhinz/vim-signify) [:gear:](./plug_plugins/vim-signify.vim) | :heavy_plus_sign: Show a diff using Vim its sign column. |
 | [vimwiki](https://github.com/vimwiki/vimwiki) [:gear:](./plug_plugins/vimwiki.vim) | Personal Wiki for Vim |
