@@ -94,7 +94,6 @@ so when ever you see `<leader>` it meas `,` key.
 | `<shift>b`     | Normal        | Opens an edit command                                                      |
 | `<shift>t`     | Normal        | Opens a tabedit command                                                    |
 | `<leader>h`    | Normal        | Highlight search word under cursor without jump to next                    |
-| `<leader>/`    | Normal        | Disable highlight search word                                              |
 | `<leader>.`    | Normal        | Set working directory                                                      |
 | `<leader>be`   | Normal        | Opens an edit command with the path of the currently edited file filled in |
 | `<leader>te`   | Normal        | Opens a tab edit command with the path of the currently edited file filled |
@@ -120,6 +119,18 @@ Normal mode:
 
 For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/vimwiki/vimwiki#key-bindings)
 
+### Incsearch
+
+Key Mapping:
+
+- `/`: highlights **ALL** pattern and forward match.
+- `?`: highlights **ALL** pattern and backward match.
+- `g/`: highlights **ALL** pattern matches.
+
+Normal:
+
+- `<esc><esc>`: Disable highlight search word.
+
 ## Commands
 
 ### Plugins Commands
@@ -143,6 +154,7 @@ For more information, see `:help fugitive`.
 <!-- PLUGIN_LIST_BEGIN -->
 | Plugin | Description |
 | ------ | ----------- |
+| [incsearch.vim](https://github.com/haya14busa/incsearch.vim) [:gear:](./plug_plugins/incsearch.vim) | 🔦 Improved incremental searching for Vim |
 | [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
 | [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
