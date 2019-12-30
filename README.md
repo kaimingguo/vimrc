@@ -17,6 +17,9 @@ All plugins settings are defined in the `plug_plugins` folder.
 
 - [Fugitive](https://github.com/tpope/vim-fugitive) Requires Git to be installed.
 - [vimwiki](https://github.com/vimwiki/vimwiki) Convert vimwiki to html requires `pandoc` to be installed.
+- [fzf](https://github.com/junegunn/fzf.vim) Requires [ripgrep](https://github.com/BurntSushi/ripgrep), or [the_silver_searcher](https://github.com/ggreer/the_silver_searcher) to be installed.
+- FZF, tagbar, and vim-gutentags Required [Universal Ctags](https://ctags.io/) to be installed.
+- [youcompleteme](https://github.com/Valloric/YouCompleteMe) make sure you have Vim 7.4+ with Python 2 or Python 3 support. Requires `CMake` and `LLVM` to build this.
 
 ## Configuration
 
@@ -139,6 +142,17 @@ Normal:
 
 - `<F3>`: Toggle tagbar split window.
 
+### Fzf
+
+Normal:
+
+- `<leader>ff`: Open currently path files list.
+- `<leader>bb`: Open all open buffers list.
+
+Insert Mode:
+
+- `<ctrl>x<ctrl>k`: Open word list.
+
 ## Commands
 
 ### Plugins Commands
@@ -163,18 +177,29 @@ For more information, see `:help fugitive`.
 
 For more information, see [nerdtree-tabs-key-mappings](https://github.com/jistr/vim-nerdtree-tabs#commands-and-mappings).
 
+#### vim-codefmt
+
+- `:FormatCode`: Format code style.
+
 ## Plugin List
 
 <!-- prettier-ignore-start -->
 <!-- PLUGIN_LIST_BEGIN -->
 | Plugin | Description |
 | ------ | ----------- |
+| [YCM-Generator](https://github.com/rdnetto/YCM-Generator) [:gear:](./plug_plugins/YCM-Generator.vim) | Generates config files for [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) |
+| [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) [:gear:](./plug_plugins/YouCompleteMe.vim) | A code-completion engine for Vim |
+| [c.vim](https://github.com/vim-scripts/c.vim) [:gear:](./plug_plugins/c.vim) | C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc |
+| [fzf.vim](https://github.com/junegunn/fzf.vim) [:gear:](./plug_plugins/fzf.vim) | fzf ❤️ vim|
 | [incsearch.vim](https://github.com/haya14busa/incsearch.vim) [:gear:](./plug_plugins/incsearch.vim) | 🔦 Improved incremental searching for Vim |
-| [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
 | [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
 | [nerdtree](https://github.com/vim-nerdtree/nerdtree) [:gear:](./plug_plugins/nerdtree.vim) | A tree explorer plugin for vim. |
+| [syntastic](https://github.com/vim-syntastic/syntastic) [:gear:](./plug_plugins/syntastic.vim) | Syntax checking hacks for vim |
 | [tagbar](https://github.com/majutsushi/tagbar) [:gear:](./plug_plugins/tagbar.vim) | Vim plugin that displays tags in a window, ordered by scope |
+| [vim-airline](https://github.com/vim-airline/vim-airline) [:gear:](./plug_plugins/vim-airline.vim) | Lean & mean status/tabline for vim that's light as air |
+| [vim-codefmt](https://github.com/google/vim-codefmt) [:gear:](./plug_plugins/vim-codefmt.vim) | codefmt is a utility for syntax-aware code formatting |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
+| [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) [:gear:](./plug_plugins/vim-gutentags.vim) | A Vim plugin that manages your tag files |
 | [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) [:gear:](./plug_plugins/vim-nerdtree-syntax-highlight.vim) | Extra syntax and highlight for nerdtree files |
 | [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) [:gear:](./plug_plugins/vim-nerdtree-tabs.vim) | NERDTree and tabs together in Vim, painlessly |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |

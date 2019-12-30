@@ -7,6 +7,23 @@ if exists('g:plug_installing_plugins')
   finish
 endif
 
+if has('nvim')
+  runtime! macros/matchit.vim
+else
+  packadd! matchit
+endif
+
+let g:tagbar_autofocs = 1
+let g:tagbar_type_ruby = {
+  \ 'kinds': [
+  \   'm:modules',
+  \   'c:classes',
+  \   'd:describes',
+  \   'C:contexts',
+  \   'f:methods',
+  \   'F:singleton methods'
+  \ ] }
+
 nmap <silent> <F3> :TagbarToggle<cr>
 
 " vim: set sw=2 ts=2 et tw=78 :
