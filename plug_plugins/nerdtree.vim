@@ -30,6 +30,6 @@ let g:NERDTreeIgnore = [
   \ '\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__' ]
 let g:NERDTreeSortOrder = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 
-nnoremap <silent> <leader>nn :NERDTreeToggle<cr>:wincmd =<cr>
+nnoremap <silent> <F2> :NERDTreeToggle<cr>:wincmd =<cr>
 
 " vim: set sw=2 ts=2 et tw=78 :

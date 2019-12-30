@@ -133,7 +133,11 @@ Normal:
 
 ### NerdTree
 
-- `<leader>nn`: Toggle NERDTree split window.
+- `<F2>`: Toggle NERDTree split window.
+
+### Tagbar
+
+- `<F3>`: Toggle tagbar split window.
 
 ## Commands
 
@@ -169,6 +173,7 @@ For more information, see [nerdtree-tabs-key-mappings](https://github.com/jistr/
 | [lightline.vim](https://github.com/itchyny/lightline.vim) [:gear:](./plug_plugins/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
 | [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
 | [nerdtree](https://github.com/vim-nerdtree/nerdtree) [:gear:](./plug_plugins/nerdtree.vim) | A tree explorer plugin for vim. |
+| [tagbar](https://github.com/majutsushi/tagbar) [:gear:](./plug_plugins/tagbar.vim) | Vim plugin that displays tags in a window, ordered by scope |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
 | [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) [:gear:](./plug_plugins/vim-nerdtree-syntax-highlight.vim) | Extra syntax and highlight for nerdtree files |
 | [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) [:gear:](./plug_plugins/vim-nerdtree-tabs.vim) | NERDTree and tabs together in Vim, painlessly |
