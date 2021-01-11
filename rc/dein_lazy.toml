@@ -1,0 +1,16 @@
+[[plugins]]
+repo = 'ycm-core/YouCompleteMe'
+on_event = 'InsertEnter'
+on_ft = [
+  'c',
+  'objc',
+  'cpp', 'cuda', 'objcpp',
+  'perl',
+  'cs', 'd', 'elixir', 'go', 'groovy', 'java', 'javascript', 'julia', 'perl6', 'python', 'scala', 'typescript',
+  'ruby', 'rust'
+]
+hook_source = '''
+  source ~/.vim/rc/plugins/youcompleteme.rc.vim
+'''
+
+# vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab filetype=toml :

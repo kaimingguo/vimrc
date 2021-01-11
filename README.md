@@ -8,26 +8,20 @@ VimL: Opinionated Vim configuration
 
 The distribution is designed to work with Vim >= 8.1 (neovim >= 0.3.8).
 
-This also requires `curl`, [git](https://git-scm.com), `ruby` support.
+This also requires [git](https://git-scm.com) support.
 
 ## Plugins Requirements
 
-I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug), which is pretty easy to install.
-All plugins settings are defined in the `plug_plugins` folder.
-
-- [Fugitive](https://github.com/tpope/vim-fugitive) Requires Git to be installed.
-- [vimwiki](https://github.com/vimwiki/vimwiki) Convert vimwiki to html requires `pandoc` to be installed.
-- [fzf](https://github.com/junegunn/fzf.vim) Requires [ripgrep](https://github.com/BurntSushi/ripgrep), or [the_silver_searcher](https://github.com/ggreer/the_silver_searcher) to be installed.
-- FZF, tagbar, and vim-gutentags Required [Universal Ctags](https://ctags.io/) to be installed.
-- [youcompleteme](https://github.com/Valloric/YouCompleteMe) make sure you have Vim 7.4+ with Python 2 or Python 3 support. Requires `CMake` and `LLVM` to build this.
+I manage plugins with [dein.vim](https://github.com/Shougo/dein.vim), which is pretty easy to install.
+All plugins settings are defined in the `rc/{dein,dein_lazy}.toml` file.
 
 ## Configuration
 
 You can overwrite default configuration and key bindings by using one of
-following files in `core` folder:
+following files in `plugin` folder and root:
 
-- **generate.vim** Regular configuration
-- **mapping.vim** Mappings key configuration
+- **init.vim** Regular configuration
+- **plugin/mappings.vim** Mappings key configuration
 
 ## Fonts
 
@@ -74,9 +68,9 @@ so when ever you see `<leader>` it meas `,` key.
 | -------------- | ------------- | -------------------------------------------------------------------------- |
 | `*`            | Normal        | Searches for the current selection word                                    |
 | `[<>]`         | Visual        | Shifting indent                                                            |
-| J              | Visual        | The selected move next row down                                            |
-| K              | Visual        | Paragraph up                                                               |
-| U              | Normal        | Remap `<ctrl>r` redo                                                       |
+| `J`            | Visual        | The selected move next row down                                            |
+| `K`            | Visual        | Paragraph up                                                               |
+| `U`            | Normal        | Remap `<ctrl>r` redo                                                       |
 | `g[oO]`        | Normal        | Begin a new line below/above the cursor without entering                   |
 | `gy`           | Normal        | Yanking entire buffer                                                      |
 | `vy`           | Normal        | Select entire buffer                                                       |
@@ -108,78 +102,9 @@ so when ever you see `<leader>` it meas `,` key.
 
 ### Plugins Mappings
 
-#### Vimwiki
-
-Normal mode:
-
-- `<leader>ww`: Open default wiki index page.
-- `<leader>wt`: Open default wiki index page in a new tab.
-- `<leader>wd`: Delete current wiki page.
-- `<leader>wr`: Rename current wiki page.
-- `<enter>`: In vimwiki file, follow/create wiki link.
-- `<backspace>`: In vimwiki file, go back to parent (previous) wiki link.
-- `<tab>`: In vimwiki file, find next wiki link.
-
-For more keys, see `:h vimwiki-mappings` or [vimwiki-readme](http://github.com/vimwiki/vimwiki#key-bindings)
-
-### Incsearch
-
-Key Mapping:
-
-- `/`: highlights **ALL** pattern and forward match.
-- `?`: highlights **ALL** pattern and backward match.
-- `g/`: highlights **ALL** pattern matches.
-
-Normal:
-
-- `<esc><esc>`: Disable highlight search word.
-
-### NerdTree
-
-- `<F2>`: Toggle NERDTree split window.
-
-### Tagbar
-
-- `<F3>`: Toggle tagbar split window.
-
-### Fzf
-
-Normal:
-
-- `<leader>ff`: Open currently path files list.
-- `<leader>bb`: Open all open buffers list.
-
-Insert Mode:
-
-- `<ctrl>x<ctrl>k`: Open word list.
-
 ## Commands
 
 ### Plugins Commands
-
-#### Vimwiki
-
-- `:Vimwiki2HTML`: Convert current wiki link to HTML.
-- `:VimwikiAll2HTML`: Convert all wiki links to HTML.
-
-#### Fugitive
-
-- `:Git`: Bring up a summary window vaguely akin to git-status.
-- `:Gwrite`: Write to the current file's path and stage the results.
-- `:Gdiffsplit!`: Diff against any and all direct ancestors, retaining focus on the current window.
-
-For more information, see `:help fugitive`.
-
-#### NerdTree (NerdTree-Tabs)
-
-- `:NerdTreeTabsOpen`: Switches NERDTree on for all tabs.
-- `:NerdTreeTabsClose`: Switches NERDTree off for all tabs.
-
-For more information, see [nerdtree-tabs-key-mappings](https://github.com/jistr/vim-nerdtree-tabs#commands-and-mappings).
-
-#### vim-codefmt
-
-- `:FormatCode`: Format code style.
 
 ## Plugin List
 
@@ -187,24 +112,6 @@ For more information, see [nerdtree-tabs-key-mappings](https://github.com/jistr/
 <!-- PLUGIN_LIST_BEGIN -->
 | Plugin | Description |
 | ------ | ----------- |
-| [YCM-Generator](https://github.com/rdnetto/YCM-Generator) [:gear:](./plug_plugins/YCM-Generator.vim) | Generates config files for [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) |
-| [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) [:gear:](./plug_plugins/YouCompleteMe.vim) | A code-completion engine for Vim |
-| [c.vim](https://github.com/vim-scripts/c.vim) [:gear:](./plug_plugins/c.vim) | C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc |
-| [fzf.vim](https://github.com/junegunn/fzf.vim) [:gear:](./plug_plugins/fzf.vim) | fzf ❤️ vim|
-| [incsearch.vim](https://github.com/haya14busa/incsearch.vim) [:gear:](./plug_plugins/incsearch.vim) | 🔦 Improved incremental searching for Vim |
-| [molokai](https://github.com/tomasr/molokai) [:gear:](./plug_plugins/molokai.vim) | Molokai color scheme for Vim |
-| [nerdtree](https://github.com/vim-nerdtree/nerdtree) [:gear:](./plug_plugins/nerdtree.vim) | A tree explorer plugin for vim. |
-| [syntastic](https://github.com/vim-syntastic/syntastic) [:gear:](./plug_plugins/syntastic.vim) | Syntax checking hacks for vim |
-| [tagbar](https://github.com/majutsushi/tagbar) [:gear:](./plug_plugins/tagbar.vim) | Vim plugin that displays tags in a window, ordered by scope |
-| [vim-airline](https://github.com/vim-airline/vim-airline) [:gear:](./plug_plugins/vim-airline.vim) | Lean & mean status/tabline for vim that's light as air |
-| [vim-codefmt](https://github.com/google/vim-codefmt) [:gear:](./plug_plugins/vim-codefmt.vim) | codefmt is a utility for syntax-aware code formatting |
-| [vim-fugitive](https://github.com/tpope/vim-fugitive) [:gear:](./plug_plugins/vim-fugitive.vim) | fugitive.vim: A Git wrapper so awesome, it should be illegal |
-| [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) [:gear:](./plug_plugins/vim-gutentags.vim) | A Vim plugin that manages your tag files |
-| [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) [:gear:](./plug_plugins/vim-nerdtree-syntax-highlight.vim) | Extra syntax and highlight for nerdtree files |
-| [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) [:gear:](./plug_plugins/vim-nerdtree-tabs.vim) | NERDTree and tabs together in Vim, painlessly |
-| [vim-polyglot](https://github.com/sheerun/vim-polyglot) [:gear:](./plug_plugins/vim-polyglot.vim) | A solid language pack for Vim. |
-| [vim-signify](https://github.com/mhinz/vim-signify) [:gear:](./plug_plugins/vim-signify.vim) | :heavy_plus_sign: Show a diff using Vim its sign column. |
-| [vimwiki](https://github.com/vimwiki/vimwiki) [:gear:](./plug_plugins/vimwiki.vim) | Personal Wiki for Vim |
 <!-- PLUGIN_LIST_END -->
 <!-- prettier-ignore-end -->
 

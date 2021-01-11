@@ -1,0 +1,21 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'NLKNguyen/papercolor-theme'
+hook_add = '''
+  set t_Co=256
+  set background=light
+  colorscheme PaperColor
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  let g:lightline = {
+    \ "colorscheme": "PaperColor"
+    \ }
+'''
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
