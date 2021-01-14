@@ -1,9 +1,10 @@
 [[plugins]]
 repo = 'ycm-core/YouCompleteMe'
-on_event = 'InsertEnter'
+build = './install.sh --clangd-completer --go-completer --rust-completer'
 on_ft = [
   'c',
   'objc',
+  'dart',
   'cpp', 'cuda', 'objcpp',
   'perl',
   'cs', 'd', 'elixir', 'go', 'groovy', 'java', 'javascript', 'julia', 'perl6', 'python', 'scala', 'typescript',
@@ -12,5 +13,8 @@ on_ft = [
 hook_source = '''
   source ~/.vim/rc/plugins/youcompleteme.rc.vim
 '''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
 
 # vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab filetype=toml :
