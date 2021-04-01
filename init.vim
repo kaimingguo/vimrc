@@ -57,8 +57,8 @@ set fileformats=unix,dos,mac
 " 'colorcolumn' is a comma separated list of screen columns that are
 " highlighted with ColorColumn |hl-ColorColumn|.  Useful to align text.
 " Will make screen redrawing slower.
-if exists('+colorcolumn') && exists('g:ruler')
-  execute 'set colorcolumn=' . join(g:ruler, ',')
+if exists('+colorcolumn') && exists('g:rulers')
+  execute 'set colorcolumn=' . join(g:rulers, ',')
 endif
 
 " When non-zero, a column with the specified width is shown at the side of

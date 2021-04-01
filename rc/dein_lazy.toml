@@ -1,0 +1,10 @@
+[[plugins]]
+repo = 'vimwiki/vimwiki'
+on_map = {n = '<Plug>'}
+on_cmd = ['VimwikiIndex', 'VimwikiTabIndex']
+hook_add = '''
+  let g:vimwiki_global_ext = 0
+
+  nnoremap <silent> <leader>ww :<C-u>VimwikiIndex<CR>
+'''
+hook_source = 'source $VIM_PATH/rc/plugins/vimwiki.vim'
