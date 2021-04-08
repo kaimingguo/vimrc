@@ -4,7 +4,7 @@
 
 let g:vimwiki_list_setting = get(g:, 'vimwiki_list_setting', {})
 let vimwiki_list_default = {
-  \ 'path': '$HOME/Documents/wiki',
+  \ 'path': '$HOME/.wiki',
   \ 'path_html': '$HOME/Documents/wiki_html',
   \ 'template_path': expand($VIM_PATH).'/templates/wiki/',
   \ 'syntax': 'markdown',

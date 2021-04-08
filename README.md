@@ -86,10 +86,15 @@ $ GITHUB_TOKEN=XXX ./tools/gen_readme_plugins.py
 | [dein.vim](https://github.com/Shougo/dein.vim) | :zap: Dark powered Vim/Neovim plugin manager |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot) | A solid language pack for Vim. |
 | [vim-colors-xcode](https://github.com/arzg/vim-colors-xcode) | Xcode 11’s dark and light colourschemes, now for Vim! |
+| [vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) | EXPERIMENTAL |
+| [nvim-yarp](https://github.com/roxma/nvim-yarp) | Yet Another Remote Plugin Framework for Neovim |
 ### Lazy Plugin List
 | Plugin | Description |
 | ------ | ----------- |
 | [vimwiki](https://github.com/vimwiki/vimwiki) | Personal Wiki for Vim |
+| [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) | A code-completion engine for Vim |
+| [jedi](https://github.com/davidhalter/jedi) | Awesome autocompletion, static analysis and refactoring library for python |
+| [syntastic](https://github.com/vim-syntastic/syntastic) | Syntax checking hacks for vim |
 <!-- END PLUGIN LIST -->
 <!-- prettier-ignore-end -->
 

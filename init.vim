@@ -307,4 +307,6 @@ endif
 " load plugin
 execute 'source' fnameescape(expand($VIM_PATH).'/rc/dein.vim')
 
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 " vim: set ts=2 sts=2 sw=2 et tw=78 ft=vim foldenable foldmethod=marker :

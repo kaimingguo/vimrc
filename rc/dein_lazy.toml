@@ -8,3 +8,21 @@ hook_add = '''
   nnoremap <silent> <leader>ww :<C-u>VimwikiIndex<CR>
 '''
 hook_source = 'source $VIM_PATH/rc/plugins/vimwiki.vim'
+
+[[plugins]]
+repo = 'ycm-core/YouCompleteMe'
+depends = ['jedi', 'syntastic']
+on_event = 'InsertEnter'
+build = './install.py --clang-completer --go-completer --rust-completer --java-completer --ts-completer'
+hook_add = '''
+  let g:ycm_register_as_syntastic_checker = 1
+  let g:ycm_enable_diagnostic_signs = 1
+  let g:ycm_complete_in_strings = 1
+  let g:ycm_to_path_interpreter = ''
+'''
+
+[[plugins]]
+repo = 'davidhalter/jedi'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
